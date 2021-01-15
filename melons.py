@@ -37,5 +37,10 @@ class Squash(Melon):
     """Handles the Squash of Melons."""
 
     def prep(self):
-        super.prep()
+
+        # Don't need self for this, will see it as a whole new variable
+        # Whyyyy?!
+        super().prep()
+
+        # Must put in self for paint for Melon
         robots.painterbot.paint(self)
